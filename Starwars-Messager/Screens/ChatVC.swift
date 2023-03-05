@@ -42,8 +42,10 @@ class ChatVC: UIViewController {
     
 // MARK: - Keyboard and TableView Size
     func addFuncsForKeyboard() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil) // klavye ayarı
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil) // klavye ayarı
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidShow), name: UIResponder.keyboardDidShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidHide), name: UIResponder.keyboardDidHideNotification, object: nil)
     }
     
     func takeSizeData() {
@@ -66,10 +68,16 @@ class ChatVC: UIViewController {
                 
                 heightOfTableView -= keyboardHeight
                 topOfTableViewConstraint.constant = -heightOfTableView - unusedBottomAreaHeight
-                
-                scrollToBottomOfChat()
             }
         }
+    }
+    
+    @objc func keyboardDidShow() {
+        scrollToBottomOfChat()
+    }
+    
+    @objc func keyboardDidHide() {
+        scrollToBottomOfChat()
     }
 
     @objc func keyboardWillHide(notification: NSNotification) {
@@ -213,7 +221,7 @@ class ChatVC: UIViewController {
     func scrollToBottomOfChat() {
         let indexPath = IndexPath(row: self.messages.count-1, section: 0)
         if !messages.isEmpty {
-            self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: false)
+            self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
         }
     }
 }
