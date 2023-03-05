@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		B88F77B629B1F2AB002CDA52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F77B529B1F2AB002CDA52 /* AppDelegate.swift */; };
 		B88F77B829B1F2AB002CDA52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F77B729B1F2AB002CDA52 /* SceneDelegate.swift */; };
-		B88F77BA29B1F2AB002CDA52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F77B929B1F2AB002CDA52 /* ViewController.swift */; };
-		B88F77BD29B1F2AB002CDA52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88F77BB29B1F2AB002CDA52 /* Main.storyboard */; };
 		B88F77BF29B1F2AC002CDA52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88F77BE29B1F2AC002CDA52 /* Assets.xcassets */; };
 		B88F77C229B1F2AC002CDA52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88F77C029B1F2AC002CDA52 /* LaunchScreen.storyboard */; };
+		B88F77CA29B1F34D002CDA52 /* WhoAreYouVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F77C929B1F34D002CDA52 /* WhoAreYouVC.swift */; };
+		B88F77CC29B1FD44002CDA52 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F77CB29B1FD44002CDA52 /* ChatVC.swift */; };
+		B88F77D129B275C7002CDA52 /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F77D029B275C7002CDA52 /* PersistanceManager.swift */; };
+		B88F77D629B2765E002CDA52 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F77D529B2765E002CDA52 /* Message.swift */; };
+		B88F77D829B27680002CDA52 /* SMError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F77D729B27680002CDA52 /* SMError.swift */; };
+		B88F77DA29B29205002CDA52 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88F77D929B29205002CDA52 /* MessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B88F77B229B1F2AB002CDA52 /* Starwars-Messager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Starwars-Messager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88F77B529B1F2AB002CDA52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B88F77B729B1F2AB002CDA52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B88F77B929B1F2AB002CDA52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B88F77BC29B1F2AB002CDA52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B88F77BE29B1F2AC002CDA52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B88F77C129B1F2AC002CDA52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B88F77C329B1F2AC002CDA52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B88F77C929B1F34D002CDA52 /* WhoAreYouVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoAreYouVC.swift; sourceTree = "<group>"; };
+		B88F77CB29B1FD44002CDA52 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		B88F77D029B275C7002CDA52 /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
+		B88F77D529B2765E002CDA52 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		B88F77D729B27680002CDA52 /* SMError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMError.swift; sourceTree = "<group>"; };
+		B88F77D929B29205002CDA52 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		B88F77B429B1F2AB002CDA52 /* Starwars-Messager */ = {
 			isa = PBXGroup;
 			children = (
-				B88F77B529B1F2AB002CDA52 /* AppDelegate.swift */,
-				B88F77B729B1F2AB002CDA52 /* SceneDelegate.swift */,
-				B88F77B929B1F2AB002CDA52 /* ViewController.swift */,
-				B88F77BB29B1F2AB002CDA52 /* Main.storyboard */,
-				B88F77BE29B1F2AC002CDA52 /* Assets.xcassets */,
-				B88F77C029B1F2AC002CDA52 /* LaunchScreen.storyboard */,
+				B88F77D429B2760B002CDA52 /* Utilities */,
+				B88F77D329B275D7002CDA52 /* Costom Views */,
+				B88F77D229B275CB002CDA52 /* Models */,
+				B88F77CF29B275AA002CDA52 /* Managers */,
+				B88F77CE29B27593002CDA52 /* Screens */,
+				B88F77CD29B27580002CDA52 /* Supports */,
 				B88F77C329B1F2AC002CDA52 /* Info.plist */,
 			);
 			path = "Starwars-Messager";
+			sourceTree = "<group>";
+		};
+		B88F77CD29B27580002CDA52 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				B88F77B529B1F2AB002CDA52 /* AppDelegate.swift */,
+				B88F77B729B1F2AB002CDA52 /* SceneDelegate.swift */,
+				B88F77BE29B1F2AC002CDA52 /* Assets.xcassets */,
+				B88F77C029B1F2AC002CDA52 /* LaunchScreen.storyboard */,
+			);
+			path = Supports;
+			sourceTree = "<group>";
+		};
+		B88F77CE29B27593002CDA52 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B88F77C929B1F34D002CDA52 /* WhoAreYouVC.swift */,
+				B88F77CB29B1FD44002CDA52 /* ChatVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B88F77CF29B275AA002CDA52 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B88F77D029B275C7002CDA52 /* PersistanceManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B88F77D229B275CB002CDA52 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B88F77D529B2765E002CDA52 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B88F77D329B275D7002CDA52 /* Costom Views */ = {
+			isa = PBXGroup;
+			children = (
+				B88F77D929B29205002CDA52 /* MessageCell.swift */,
+			);
+			path = "Costom Views";
+			sourceTree = "<group>";
+		};
+		B88F77D429B2760B002CDA52 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B88F77D729B27680002CDA52 /* SMError.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +187,6 @@
 			files = (
 				B88F77C229B1F2AC002CDA52 /* LaunchScreen.storyboard in Resources */,
 				B88F77BF29B1F2AC002CDA52 /* Assets.xcassets in Resources */,
-				B88F77BD29B1F2AB002CDA52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B88F77BA29B1F2AB002CDA52 /* ViewController.swift in Sources */,
+				B88F77D129B275C7002CDA52 /* PersistanceManager.swift in Sources */,
+				B88F77DA29B29205002CDA52 /* MessageCell.swift in Sources */,
+				B88F77CC29B1FD44002CDA52 /* ChatVC.swift in Sources */,
 				B88F77B629B1F2AB002CDA52 /* AppDelegate.swift in Sources */,
+				B88F77D629B2765E002CDA52 /* Message.swift in Sources */,
+				B88F77CA29B1F34D002CDA52 /* WhoAreYouVC.swift in Sources */,
+				B88F77D829B27680002CDA52 /* SMError.swift in Sources */,
 				B88F77B829B1F2AB002CDA52 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +211,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B88F77BB29B1F2AB002CDA52 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B88F77BC29B1F2AB002CDA52 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B88F77C029B1F2AC002CDA52 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,13 +343,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5CV2BM6V4T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Starwars-Messager/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,13 +369,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5CV2BM6V4T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Starwars-Messager/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
